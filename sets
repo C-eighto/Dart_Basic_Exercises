@@ -1,0 +1,16 @@
+--Sets
+
+void main() {
+
+  var lista1  = {1,2,3,4};
+  var lista2 = {5,6,7,8};
+  
+  lista1.add(12);
+  print("$lista1"); //{1,2,3,4,12}
+  lista1.remove(12);
+  print("$lista1"); //{1,2,3,4}
+  var union = lista1.union(lista2);
+  print("$union"); //{1,2,3,4,5,6,7,8}
+  
+  
+}
