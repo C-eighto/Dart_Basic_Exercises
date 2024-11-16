@@ -1,7 +1,3 @@
--- Ortiz Cruz Hector Jair
--- Actividad 5.1
--- Lists
-
 void main() {
 
   var desserts = ["galletas","panquecitos","gelatinas"];
