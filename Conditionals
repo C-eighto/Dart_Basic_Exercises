@@ -1,0 +1,47 @@
+void main() {
+   //bucle For
+  print("---------IF SIMPLE----------");
+    int num = 7;
+  if (num % 2 == 0) {
+    print('$num es un número par');
+  } else {
+    print('$num es un número impar'); //entrada esperada
+  }
+
+     //bucle For
+  print("\n---------IF-CASE----------");
+   int score = 85;
+  if (score >= 90) {
+    print('Excelente');
+  } else if (score >= 75) {
+    print('Bueno'); //entrada esperada
+  } else if (score >= 50) {
+    print('Regular');
+  } else {
+    print('Insuficiente');
+  } 
+  
+       //bucle For
+  print("\n---------SWITCH----------");
+  String day = 'Miércoles';
+  switch (day) {
+    case 'Lunes':
+      print('Inicio de semana');
+      break;
+    case 'Martes':
+      print('Segundo día');
+      break;
+    case 'Miércoles':
+      print('Mitad de semana'); //entrada esperada
+      break;
+    case 'Jueves':
+      print('Cerca del fin de semana');
+      break;
+    case 'Viernes':
+      print('Último día de trabajo');
+      break;
+    default:
+      print('Fin de semana');
+  }
+  
+}
