@@ -1,0 +1,43 @@
+void main() {
+  // Crear un mapa que almacene un menú de platillos
+  Map<String, double> menuPlatillos = {
+    'Pasta': 30.0,
+    'Pizza': 50.0,
+    'Ensalada': 20.0,
+    'Sopa': 15.0,
+    'Tacos': 25.0
+  };
+
+  // Mostrar todos los datos del menú de platillos
+  print('Menú de platillos:');
+  menuPlatillos.forEach((platillo, precio) {
+    print('$platillo: \$${precio.toStringAsFixed(2)}');
+  });
+
+  print("\n---------------------Llamar a la función para buscar un platillo---------------------------");
+  buscarPlatillo(menuPlatillos, 'Pizza');
+  buscarPlatillo(menuPlatillos, 'Hamburguesa');
+
+    print("\n---------------------Llamar a la función para actualizar el precio de un platillo---------------------------");
+  actualizarPrecio(menuPlatillos, 'Pasta', 35.0);
+  actualizarPrecio(menuPlatillos, 'Hamburguesa', 40.0);
+}
+
+// Función para buscar un platillo en específico y mostrarlo
+void buscarPlatillo(Map<String, double> menu, String platillo) {
+  if (menu.containsKey(platillo)) {
+    print('Platillo encontrado: $platillo - Precio: \$${menu[platillo]!.toStringAsFixed(2)}');
+  } else {
+    print('El platillo "$platillo" no se encuentra en el menú.');
+  }
+}
+
+// Función para actualizar el precio de un platillo
+void actualizarPrecio(Map<String, double> menu, String platillo, double nuevoPrecio) {
+  if (menu.containsKey(platillo)) {
+    menu[platillo] = nuevoPrecio;
+    print('El precio del platillo "$platillo" ha sido actualizado a \$${nuevoPrecio.toStringAsFixed(2)}');
+  } else {
+    print('El platillo "$platillo" no se encuentra en el menú. No se puede actualizar el precio.');
+  }
+}
