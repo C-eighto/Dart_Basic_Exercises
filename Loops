@@ -1,0 +1,34 @@
+void main() {
+   //bucle For
+  print("---------BUCCLE FOR----------");
+  for (int i = 1; i <= 5; i++) {
+    print('Soy el numero $i');
+  }
+  //bucle While
+  print("\n---------BUCCLE WHILE----------");
+    int i = 1;
+  while (i <= 5) {
+    print("Nuevamente soy el numero $i en un blucle 'WHILE'");
+    i++;
+  }
+    //bucle While
+  print("\n---------BUCCLE DO-WHILE----------");
+    int j = 1;
+  do {
+    print("Número $j dentro de un 'DO-WHILE' ");
+    j++;
+  } while (j <= 5);
+  
+    //bucle While
+  print("\n---------USO DEL BREAK----------");
+  
+    for (int h = 1; h <= 10; h++) {
+    if (h == 6) {
+      print('Bucle detenido en el número: $h');
+      break;
+    }
+    print('Número: $h');
+  }
+
+  
+}
