@@ -1,0 +1,15 @@
+-- Ortiz Cruz Hector Jair
+-- Actividad 5.1
+-- Lists
+
+void main() {
+
+  var desserts = ["galletas","panquecitos","gelatinas"];
+  
+  print("${desserts.length}"); //3
+  print("${desserts.first}"); //galletas
+  print("${desserts.last}"); //gelatinas
+  print("${desserts.isEmpty}");  //false
+  print("${desserts.isNotEmpty}"); //true
+  
+}
